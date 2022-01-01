@@ -12,31 +12,33 @@ def isPalindrome(number):
 	
 
 def palindromeFinder():
-	maxnum = 999 * 999
-	highestPal = 0
-	palHolder = []
-	for i in range(maxnum, 800_000, -1):
-		if isPalindrome(i) == True:
-			palHolder.append[i]
-			print(i)
-			break
+	container = []
 
-
-time = 1
-space = 3
-
-timespace = [1,2,3,4]
-timespaceR = [[1][2][3][4]]
-
-
-
-
-
-		
-
-			
+	for i in range(100, 999):
+		for j in range(100, 999):
+			holder = i * j
+			holder = str(holder)
+			if holder == holder[::-1]:
+				container.append(int(holder))
 	
-palindromeFinder()
+	return max(container)
+
+print(palindromeFinder())
+
+	# for i in range(maxnum, 800_000, -1):
+	# 	if isPalindrome(i) == True:
+	# 		palHolder.append(i)
+	
+
+
+# time = 1
+# space = 3
+
+# timespace = [1,2,3,4]
+# timespaceR = [[1][2][3][4]]
+
+
+
 
 # print(isPalindrome(988889))
 
